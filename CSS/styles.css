@@ -7,6 +7,7 @@
 * *, * *::placeholder {
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
+    color: var(--color-texto);
 }
 
 .experiencia {
@@ -59,3 +60,46 @@
     font-weight: normal;
     font-size: 0.875rem;
 }
+
+/* MAIN */
+.hero {
+    
+}
+
+.contenedor-imagen {
+    width: 100%;
+
+    & > img {
+        width: 6.125rem;
+    }
+}
+
+.presentacion {
+    & > h2 {
+        font-weight: bold;
+        font-size: 1.375rem;
+    }
+
+    & > p {
+        font-size: 0.875rem;
+    }
+}
+
+.redes {
+    display: flex;
+    overflow: hidden;
+
+}
+
+
+.redes__enlace {
+    & > a {
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    &:not(:last-child) > a {
+        margin-right: 0.5rem;
+    }
+}
+
