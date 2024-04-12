@@ -10,6 +10,11 @@
     color: var(--color-texto);
 }
 
+h2 {
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
 .experiencia {
     overflow: hidden;
 }
@@ -111,3 +116,18 @@
         margin-right: 0.5rem;
     }
 }
+
+/* INFORMACIÓN */
+.informacion {
+    background-color: #EAF2FD;
+    padding: 1rem;
+
+    & > p {
+        font-size: 0.875rem;
+    }
+
+    > *:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
