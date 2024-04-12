@@ -63,7 +63,13 @@
 
 /* MAIN */
 .hero {
-    
+    padding: 1rem;
+}
+
+.hero, .presentacion {
+    > *:not(:last-child) {
+        margin-bottom: 1rem;
+    }
 }
 
 .contenedor-imagen {
@@ -72,6 +78,8 @@
     & > img {
         width: 6.125rem;
     }
+
+    margin-bottom: 1rem;
 }
 
 .presentacion {
@@ -88,18 +96,18 @@
 .redes {
     display: flex;
     overflow: hidden;
-
 }
-
 
 .redes__enlace {
     & > a {
         text-decoration: none;
         font-weight: 600;
+
+        display: flex;
+        justify-content: center;
     }
 
-    &:not(:last-child) > a {
+    &:not(:last-child) > a {    
         margin-right: 0.5rem;
     }
 }
-
