@@ -131,3 +131,46 @@ h2 {
     }
 }
 
+/* SKILLS */
+.skills, .hobbies {
+    padding: 1rem;
+    > h2 {
+        text-align: center;
+    }
+}
+
+.contenedor {
+    overflow: hidden;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    row-gap: 2rem;
+
+    .contenedor__caja {
+        background-color: #FFFFFF;
+        margin-top: 2rem;
+
+        height: 7.375rem;
+        width: 9.75rem;
+        padding: 1rem;
+
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        > p {
+            font-weight: bold;
+        }
+    }
+}
+
+.contenedor-imagen-icon {
+    > img {
+        width: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
