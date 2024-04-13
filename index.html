@@ -285,10 +285,23 @@
             <p>¿Quieres contactarme?<br>Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p>
 
             <form class="formulario" action="#">
-                <input class="input-texto" type="text" placeholder="Nombre">
-                <input class="input-texto" type="email" placeholder="Correo">
-                <input class="input-texto" type="text" placeholder="Asunto">
+                <div class="formulario-input__contenedor">
+                    <input class="input-texto" type="text" placeholder="">
+                    <label class="input-contenedor__label" for="nombre">Nombre</label>
+                </div>
+
+                <div class="formulario-input__contenedor">
+                    <input class="input-texto" type="email" placeholder="">
+                    <label class="input-contenedor__label" for="email">Correo</label>
+                </div>
+
+                <div class="formulario-input__contenedor">
+                    <input class="input-texto" type="text" placeholder="">
+                    <label class="input-contenedor__label" for="Asunto">Asunto</label>
+                </div>
+
                 <textarea class="input-texto formulario__mensaje" placeholder="Mensaje"></textarea>
+
                 <input class="btn-enfasis btn-submit" type="submit" value="Enviar mensaje">
             </form>
         </section>
