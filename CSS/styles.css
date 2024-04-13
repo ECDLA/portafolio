@@ -389,3 +389,13 @@ h3 {
     width: 8.313rem;
     height: 2.5rem;
 }
+
+/* FOOTER */
+.footer {
+    padding: 2rem;
+    text-align: center;
+
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+}
