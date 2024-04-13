@@ -73,6 +73,10 @@ h3 {
 /* MAIN */
 .hero {
     padding: 1rem;
+
+    & > img {
+        width: 9.125rem;
+    }
 }
 
 .hero, .presentacion {
@@ -83,11 +87,6 @@ h3 {
 
 .contenedor-imagen {
     width: 100%;
-
-    & > img {
-        width: 6.125rem;
-    }
-
     margin-bottom: 1rem;
 }
 
@@ -148,7 +147,7 @@ h3 {
     overflow: hidden;
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1.75rem, 9.75rem));
+    grid-template-columns: repeat(2, 9.75rem);
     justify-content: center;
     
     gap: 1rem;
@@ -194,7 +193,8 @@ h3 {
 .contenedor-formacion {
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18.5rem, 1fr));
+    grid-template-columns: repeat(1, 18.5rem);
+    justify-content: center;
     
     gap: 1rem;
     margin: 2rem 0 2rem 0;
@@ -369,6 +369,8 @@ h3 {
 
     font-size: 1rem;
     border-bottom: 1px solid #C8C8C8;
+
+    height: 7.063rem;
     
     &::placeholder {
         color: #A2A2A2;
@@ -398,4 +400,70 @@ h3 {
     font-size: 1rem;
     font-weight: 500;
     font-family: "Raleway", sans-serif;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    /* HERO */
+    .hero {
+        padding: 2rem;
+
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .presentacion, .hero {
+        > *:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .redes__enlace {    
+        &:not(:last-child) > a {    
+            margin-right: 2rem;
+        }
+    }
+
+    /* INFORMACION */
+    .informacion {
+        padding: 2rem;
+    }
+
+    /* SKILLS */
+    .contenedor {
+        grid-template-columns: repeat(3, 14rem);
+
+        .contenedor__caja {
+            padding: 2rem;
+        }
+    }
+
+    /* FORMACION */
+    .contenedor-formacion {
+        grid-template-columns: repeat(3, 14rem);
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* EXPERIENCIA */
+    .contenedor-experiencia {
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 200px; */
+        justify-content: center;
+        
+        
+        .contenedor-experiencia__caja {
+            
+            > figure { 
+                > img {
+                    width: 44rem;
+                    height: 20rem;
+                }
+            }
+        }
+    }
 }
