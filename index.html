@@ -8,6 +8,9 @@
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- JavaScript -->
+    <script src="JS/index.js"></script>
 </head>
 <body class="contenedor-grid">
     <header class="header">
@@ -298,23 +301,25 @@
     
                 <form class="formulario" action="#">
                     <div class="formulario-input__contenedor">
-                        <input class="input-texto" type="text" placeholder="">
+                        <input id="nombre-usuario" class="input-texto" type="text" placeholder="">
                         <label class="input-contenedor__label" for="nombre">Nombre</label>
                     </div>
     
                     <div class="formulario-input__contenedor">
-                        <input class="input-texto" type="email" placeholder="">
+                        <input id="correo-usuario" class="input-texto" type="email" placeholder="">
                         <label class="input-contenedor__label" for="email">Correo</label>
                     </div>
     
                     <div class="formulario-input__contenedor">
-                        <input class="input-texto" type="text" placeholder="">
+                        <input id="asunto-usuario" class="input-texto" type="text" placeholder="">
                         <label class="input-contenedor__label" for="Asunto">Asunto</label>
                     </div>
     
-                    <textarea class="input-texto formulario__mensaje" placeholder="Mensaje"></textarea>
-    
-                    <input class="btn-enfasis btn-submit" type="submit" value="Enviar mensaje">
+                    <textarea id="mensaje-usuario" class="input-texto formulario__mensaje" placeholder="Mensaje"></textarea>
+                    
+                    <!-- al presionar sobre el boton se ejecuta la funcion validarNombreUsuario -->
+                    
+                    <input id="enviar" class="btn-enfasis btn-submit" onclick="validarNombreUsuario()" type="submit" value="Enviar mensaje">
                 </form>
 
             </div>
